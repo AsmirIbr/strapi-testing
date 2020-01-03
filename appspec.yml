@@ -2,12 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/strapi
-permissions:
-  - object: /tmp/strapi
-    owner: root
-    group: root
-    mode: 755
+    destination: /var/strapi
 hooks:
   ApplicationStart:
     - location: scripts/start.sh

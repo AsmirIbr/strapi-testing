@@ -4,13 +4,20 @@ phases:
   install:
     runtime-versions:
       nodejs: 10
+  pre-build:
+    commands:
+      - npm install
+      - npm install yarn -g
   build:
     commands:
-      - npm install yarn -g
-      - npm install
       - NODE_ENV=production yarn build
-      - echo Build completed on `date`
 
 artifacts:
   files:
-    - '**/*'
+    - appspec.yml
+    - server.js
+    - scripts/start.sh
+
+cache:
+  paths:
+    - 'node_modules/**/*'
