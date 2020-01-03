@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "marce"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "asfgfdah": {
+      "type": "string"
+    },
+    "gdfsgfdgs": {
+      "type": "richtext"
+    },
+    "gsdfgdsfg": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "marces"
+}
