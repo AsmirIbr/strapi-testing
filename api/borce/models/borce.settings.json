@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "Borce"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "faqwq": {
+      "type": "string"
+    },
+    "czxq": {
+      "type": "richtext"
+    },
+    "zczc": {
+      "type": "decimal"
+    }
+  },
+  "connection": "default",
+  "collectionName": "borces"
+}
