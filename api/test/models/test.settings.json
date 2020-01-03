@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "test"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "asdasda": {
+      "type": "string"
+    },
+    "dasdasda": {
+      "type": "richtext"
+    },
+    "asdasdad": {
+      "type": "decimal"
+    },
+    "asdqwe": {
+      "type": "string"
+    },
+    "asdafsa": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "tests"
+}
