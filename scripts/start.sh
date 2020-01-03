@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl restart strapi.services
+systemctl restart strapi.service
