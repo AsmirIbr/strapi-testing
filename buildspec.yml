@@ -4,7 +4,7 @@ phases:
   install:
     runtime-versions:
       nodejs: 10
-  pre_build:
+  pre_sbuild:
     commands:
       - npm install
       - npm install yarn -g
@@ -14,9 +14,7 @@ phases:
 
 artifacts:
   files:
-    - appspec.yml
-    - server.js
-    - scripts/start.sh
+    - '**/*'
 
 cache:
   paths:
