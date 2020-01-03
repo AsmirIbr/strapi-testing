@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /tmp/strapi
 permissions:
-  - object: /tmp/
+  - object: /tmp/strapi
     owner: root
     group: root
     mode: 755
