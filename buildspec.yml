@@ -6,11 +6,17 @@ phases:
       nodejs: 10
   pre_build:
     commands:
-      - npm install
-      - npm install yarn -g
+      - sed -i 's/DATABASE_CLIENT/'$DB_CLIENT'/g' config/environments/$ENV/database.json
+      - sed -i 's/DATABASE_HOST/'$DB_URL'/g' config/environments/$ENV/database.json
+      - sed -i 's/DATABASE_PORT/'$DB_PORT'/g' config/environments/$ENV/database.json
+      - sed -i 's/DATABASE_NAME/'$DB_NAME'/g' config/environments/$ENV/database.json
+      - sed -i 's/DATABASE_USERNAME/'$DB_USER'/g' config/environments/$ENV/database.json
+      - sed -i 's/DATABASE_PASSWORD/'$DB_PASS'/g' config/environments/$ENV/database.json
   build:
     commands:
-      - NODE_ENV=production yarn build
+      - npm install
+      - npm install yarn -g
+      - NODE_ENV=$ENV yarn build
 
 artifacts:
   files:
